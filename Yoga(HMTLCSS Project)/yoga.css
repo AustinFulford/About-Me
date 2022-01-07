@@ -1,0 +1,168 @@
+header {
+	  background-image: url(lilyheader.jpg) ;
+	  background-repeat: no-repeat ;
+	  background-position: right ;
+	  height: 150px ;
+	  background-color: #9BC1C2 ;
+	  color: #3F2860 ;
+	  display: block ;
+	  	  
+}
+table{
+	  margin: auto;
+	  width: 60%;
+	  border: 1px inset #3F2860;
+	  border-collapse: collapse;
+	  margin-bottom: 1em;
+	  border: 1px;
+	  
+}
+label{
+	float: left;
+	display: block;
+	text-align: right;
+	font-weight: bold;
+	width: 10em;
+	padding-right: 1em;
+}
+input, textarea{
+	display: block;
+	margin-bottom: 2em;
+}
+#mySubmit{
+	margin-left: 12em;
+}
+form{
+	padding: 3em;
+}
+td, th{
+	  padding: 5px;
+	  border: 1px inset #3F2860;
+}
+tr:nth-of-type(even) { 
+      background-color: #9BC1C2;
+	  
+ }
+ 
+caption{
+	  margin: 1em;
+	  font-weight: bold;
+	  font-size: 120%;
+}
+
+nav {
+      font-weight: bold ;
+	  float: left ;
+	  width: 160px ;
+	  padding: 1em ;
+	  display: block;
+}
+
+	nav a {
+      text-decoration: none ;
+	  text-align: center ;
+	  font-weight: bold ;
+	  display: block ;
+	  padding: 1em ;
+	  margin-bottom: 1em ;
+	  border: 3px outset #CCCCCC ;
+}
+		nav a:link { 
+		 color: #3F2860 ; 
+}
+		nav a:visited { 
+		 color: #497777 ;
+}
+		nav a:hover { 
+		 color: #A26100 ; 
+		 border: 3px inset #333333 ;
+}
+	nav ul { 
+		list-style-type: none ;
+		padding-left: 0 ;
+}
+h1 {
+	padding-top: 50px ;
+    padding-left: 2em ;
+}
+
+body {
+      background-color: #3F2860 ;
+      font-family: Arial ;
+	  color: #3F2860 ;
+	  margin-left: 170px ;
+	  padding-top: 1em ;
+}
+* { box-sizing: border-box; 
+}
+
+footer {
+          background-color: #9BC1C2 ;
+          font-size: small ;
+          text-align: center ;
+          font-style: italic ;
+		  padding: 1em ;
+		  display: block;
+}
+
+#wrapper {
+          margin-left: auto ;
+          margin-right: auto ;
+          width: 80% ;
+          color: #3F2860 ;
+          background-color: #F5F5F5 ;
+		  min-width: 1200px ;
+		  max-width: 1480px ;
+		  
+}
+
+main {
+      padding: 0em 2em ;
+      display: block ;
+	  padding-top: 1em;
+}
+
+#hero {
+		text-align: center ;
+}
+.studio{
+		font-style: italic ;
+}
+.floatleft {
+	float: left;
+	margin-right: 4em;
+}
+.clear {
+	clear: both;
+}
+#mobile { display: none ; 
+}
+
+#desktop { display: inline ; 
+}
+
+@media only screen and (max-width: 1024px) {
+	body{margin: 0; padding: 0em}
+	#wrapper{width: 100%; min-width: 0; margin: 0; padding: 0;}
+	header{padding-top: 1px;}
+	nav{float: none; width: auto; padding-left: 2em;}
+	nav a{padding: 0.2em; margin-left: 0.3em; float: left; width: 23%}
+	main{padding: 2.5em 1em; margin: 0; font-size: 90%; clear: both;}
+	#hero{width: 100%; height: auto;}
+	h2, h3, p, dl{padding: 0em 2em;}
+	main ul{margin-left: 2em;}
+	.floatleft{margin-left: 2em; margin-bottom: 1em;}
+	clear{padding-left: 2em;}
+	
+}
+
+@media only all and (max-width: 768px) {
+	h1{font-size: 2em; padding-top: 0.25em; padding-left: 1.5em; width:85%; text-align: center;}
+	nav a{padding: 0.5em; width: 45%; float: left; min-width: 6em; margin-left: 0.5em}
+	main{padding-top: 0;}
+	.floatleft{float: none; display: none;}
+	#hero{display:none}
+	footer{padding: 0.5em; margin: 0;}
+	#mobile { display: inline;}
+    #desktop { display: none;}	
+}
